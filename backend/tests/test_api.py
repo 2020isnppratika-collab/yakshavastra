@@ -27,6 +27,12 @@ async def test_health_and_costumes():
 async def test_auth_and_booking_flow():
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as ac:
+        # Clean up previous test run bookings
+        from app.core.deps import get_db
+        db = await get_db()
+        await db.bookings.delete_many({"event_details.event_name": "Udupi Deepotsava 2026"})
+        await db.availability_holds.delete_many({})
+
         # 1. Login with demo customer
         login_res = await ac.post("/api/v1/auth/login", json={
             "email": "customer@demo.com",
@@ -49,8 +55,8 @@ async def test_auth_and_booking_flow():
                     "size": "L",
                     "quantity": 1,
                     "rental_mode": "day",
-                    "start_at": "2026-12-20",
-                    "end_at": "2026-12-21",
+                    "start_at": "2027-01-10",
+                    "end_at": "2027-01-11",
                     "slot": "full_day"
                 }
             ]
