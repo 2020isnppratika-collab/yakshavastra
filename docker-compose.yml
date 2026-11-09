@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017
+      - MONGODB_DB=yakshagana_rentals
+      - USE_IN_MEMORY_DB_FALLBACK=true
+      - JWT_SECRET=yakshagana_secret_key_demo_2026_coastal_karnataka
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000
+      - ENABLE_MOCK_PAYMENT=true
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7.0
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
