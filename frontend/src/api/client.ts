@@ -1,6 +1,7 @@
 import { Costume, CartItem, User, Booking, CategoryInfo, EventDetails, PricingBreakdown } from "../types";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api/v1";
+const rawBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api/v1";
+const API_BASE = rawBase.endsWith("/") ? rawBase.slice(0, -1) : rawBase;
 
 export async function apiRequest<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem("yaksha_token");
@@ -13,7 +14,8 @@ export async function apiRequest<T>(endpoint: string, options: RequestInit = {})
     (headers as Record<string, string>)["Authorization"] = `Bearer ${token}`;
   }
 
-  const url = endpoint.startsWith("http") ? endpoint : `${API_BASE}${endpoint}`;
+  const cleanEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+  const url = endpoint.startsWith("http") ? endpoint : `${API_BASE}${cleanEndpoint}`;
   const response = await fetch(url, {
     ...options,
     headers,
