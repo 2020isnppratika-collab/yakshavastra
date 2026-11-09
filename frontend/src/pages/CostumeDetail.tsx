@@ -75,16 +75,19 @@ export const CostumeDetail: React.FC = () => {
         slot: selectedSlot,
         quantity,
       })
-      .then((res) => {
-        if (!res.is_available) {
+      .then((res: any) => {
+        const isAvail = res?.is_available ?? res?.available ?? true;
+        if (!isAvail) {
           setAvailabilityWarning(
-            `Only ${res.available_units} unit(s) remaining for selected dates/slot (${quantity} requested).`
+            `Only ${res.available_units ?? 0} unit(s) remaining for selected dates/slot (${quantity} requested).`
           );
         } else {
           setAvailabilityWarning(null);
         }
       })
-      .catch(() => {});
+      .catch(() => {
+        setAvailabilityWarning(null);
+      });
   }, [costume, startDate, endDate, selectedSlot, quantity]);
 
   if (loading || !costume) {

@@ -24,11 +24,11 @@ export const Checkout: React.FC = () => {
   const { user, loginAsDemo } = useAuth();
   const navigate = useNavigate();
 
-  const [eventName, setEventName] = useState("");
-  const [troupeName, setTroupeName] = useState("");
-  const [venue, setVenue] = useState("");
-  const [city, setCity] = useState("Udupi");
-  const [contactPhone, setContactPhone] = useState(user?.phone || "+91 99001 54321");
+  const [eventName, setEventName] = useState("Yakshagana Prasanga Performance");
+  const [troupeName, setTroupeName] = useState("Saligrama Mela");
+  const [venue, setVenue] = useState("Town Hall Auditorium");
+  const [city, setCity] = useState("Bengaluru");
+  const [contactPhone, setContactPhone] = useState(user?.phone || "+91 80733 77289");
   const [notes, setNotes] = useState("");
   const [pickupMode, setPickupMode] = useState<"self_pickup" | "delivery">("self_pickup");
 

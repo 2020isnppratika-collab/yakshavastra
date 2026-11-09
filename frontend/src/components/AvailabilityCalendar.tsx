@@ -127,12 +127,13 @@ export const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({
           const isPast = dayStr < todayStr;
 
           // Slot-specific availability check if slot is not full_day
-          let isAvailable = dayInfo ? dayInfo.is_available : true;
-          let unitsLeft = dayInfo ? dayInfo.units_available : 1;
+          let isAvailable = dayInfo ? (dayInfo.is_available ?? dayInfo.available ?? true) : true;
+          let unitsLeft = dayInfo ? (dayInfo.units_available ?? dayInfo.available_units ?? 3) : 3;
 
           if (dayInfo && selectedSlot !== "full_day" && dayInfo.slots?.[selectedSlot]) {
-            isAvailable = dayInfo.slots[selectedSlot].is_available;
-            unitsLeft = dayInfo.slots[selectedSlot].available_units;
+            const slotInfo = dayInfo.slots[selectedSlot];
+            isAvailable = slotInfo.is_available ?? slotInfo.available ?? true;
+            unitsLeft = slotInfo.available_units ?? slotInfo.units_available ?? 3;
           }
 
           if (isPast) {

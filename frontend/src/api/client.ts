@@ -80,14 +80,54 @@ function handleMockRequest<T>(endpoint: string, options: RequestInit = {}): T {
   // 1. Costumes
   if (path.startsWith("/costumes")) {
     if (path.includes("/availability")) {
+      const start = searchParams.get("start");
+      const end = searchParams.get("end");
+      if (start && end) {
+        return {
+          costume_id: path.split("/")[2] || "costume_1",
+          start,
+          end,
+          slot: searchParams.get("slot") || "full_day",
+          is_available: true,
+          available: true,
+          available_units: 3,
+          total_units: 3,
+          buffer_days: 1,
+          message: "Available for selected dates & slot"
+        } as T;
+      }
+
+      // Generate full monthly calendar for AvailabilityCalendar component
+      const now = new Date();
+      const targetYear = parseInt(searchParams.get("year") || String(now.getFullYear()));
+      const targetMonth = parseInt(searchParams.get("month") || String(now.getMonth() + 1));
+      const daysCount = new Date(targetYear, targetMonth, 0).getDate();
+      const calendarDays = [];
+      for (let day = 1; day <= daysCount; day++) {
+        const dStr = `${targetYear}-${String(targetMonth).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+        calendarDays.push({
+          date: dStr,
+          is_available: true,
+          available: true,
+          units_available: 3,
+          total_units: 3,
+          slots: {
+            morning: { is_available: true, available_units: 3 },
+            evening: { is_available: true, available_units: 3 },
+            night: { is_available: true, available_units: 3 },
+            full_day: { is_available: true, available_units: 3 }
+          }
+        });
+      }
       return {
-        available: true,
-        available_units: 3,
+        costume_id: path.split("/")[2] || "costume_1",
+        year: targetYear,
+        month: targetMonth,
         total_units: 3,
-        is_blocked: false,
-        message: "Available for selected dates & slot"
+        days: calendarDays
       } as T;
     }
+
     const parts = path.split("/").filter(Boolean);
     if (parts.length === 2) {
       // /costumes/:id
