@@ -66,7 +66,7 @@ export const AdminCostumes: React.FC = () => {
     setRentalMode("both");
     setSizesStr("Free, M, L");
     setIncludesStr("Kireeta, Bhujakeerthi, Skirt");
-    setImageUrl("https://images.unsplash.com/photo-1596461404969-9ae70f2830c1");
+    setImageUrl("/images/costumes/raja_arjuna_1.jpg");
     setIsModalOpen(true);
   };
 

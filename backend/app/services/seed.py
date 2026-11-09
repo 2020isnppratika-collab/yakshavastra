@@ -17,9 +17,8 @@ COSTUMES_SEED = [
         "tags": ["royal", "badagu-thittu", "arjuna", "kireeta", "gold-foil", "stage-grade"],
         "sizes": ["Free", "L", "XL"],
         "images": [
-            "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/raja_arjuna_1.jpg",
+            "/images/costumes/raja_arjuna_2.jpg"
         ],
         "price_per_day": 2400.0,
         "price_per_slot": {"morning": 1100.0, "evening": 1400.0, "night": 1900.0},
@@ -42,8 +41,8 @@ COSTUMES_SEED = [
         "tags": ["karna", "sun-god", "kavacha", "kundala", "tenku-thittu"],
         "sizes": ["Free", "M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/raja_karna_1.jpg",
+            "/images/costumes/raja_karna_2.jpg"
         ],
         "price_per_day": 2200.0,
         "price_per_slot": {"morning": 1000.0, "evening": 1300.0, "night": 1750.0},
@@ -66,7 +65,8 @@ COSTUMES_SEED = [
         "tags": ["prince", "warrior", "indrajitu", "stage-grade"],
         "sizes": ["M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/raja_indrajithu.jpg",
+            "/images/costumes/raja_arjuna_2.jpg"
         ],
         "price_per_day": 1900.0,
         "price_per_slot": {"morning": 900.0, "evening": 1100.0, "night": 1500.0},
@@ -89,7 +89,8 @@ COSTUMES_SEED = [
         "tags": ["monarch", "dasharatha", "classical", "badagu-thittu"],
         "sizes": ["Free", "XL"],
         "images": [
-            "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/raja_dasharatha.jpg",
+            "/images/costumes/raja_krishna.jpg"
         ],
         "price_per_day": 2100.0,
         "price_per_slot": {"morning": 950.0, "evening": 1200.0, "night": 1650.0},
@@ -114,8 +115,8 @@ COSTUMES_SEED = [
         "tags": ["ravana", "ten-headed", "asura", "fierce", "badagu-thittu", "stage-grade"],
         "sizes": ["Free", "L", "XL"],
         "images": [
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rakshasa_ravana_1.jpg",
+            "/images/costumes/rakshasa_ravana_2.jpg"
         ],
         "price_per_day": 3200.0,
         "price_per_slot": {"morning": 1400.0, "evening": 1800.0, "night": 2500.0},
@@ -138,7 +139,8 @@ COSTUMES_SEED = [
         "tags": ["mahishasura", "tenku-thittu", "bannada", "horned-crown"],
         "sizes": ["Free", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rakshasa_mahishasura.jpg",
+            "/images/costumes/rakshasa_ravana_2.jpg"
         ],
         "price_per_day": 2800.0,
         "price_per_slot": {"morning": 1250.0, "evening": 1600.0, "night": 2200.0},
@@ -161,7 +163,8 @@ COSTUMES_SEED = [
         "tags": ["kumbhakarna", "giant", "asura", "comedy-fierce"],
         "sizes": ["XL", "Free"],
         "images": [
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rakshasa_kumbhakarna.jpg",
+            "/images/costumes/rakshasa_ravana_1.jpg"
         ],
         "price_per_day": 2500.0,
         "price_per_slot": {"morning": 1100.0, "evening": 1450.0, "night": 2000.0},
@@ -184,7 +187,8 @@ COSTUMES_SEED = [
         "tags": ["shoorpanakha", "demoness", "female-demon", "dramatic"],
         "sizes": ["Free", "M"],
         "images": [
-            "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rakshasa_shoorpanakha.jpg",
+            "/images/costumes/rakshasa_mahishasura.jpg"
         ],
         "price_per_day": 1800.0,
         "price_per_slot": {"morning": 800.0, "evening": 1050.0, "night": 1400.0},
@@ -209,8 +213,8 @@ COSTUMES_SEED = [
         "tags": ["stree-vesha", "damayanthi", "bridal", "saree", "classical", "badagu-thittu"],
         "sizes": ["Free", "M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/stree_damayanthi_1.jpg",
+            "/images/costumes/stree_damayanthi_2.jpg"
         ],
         "price_per_day": 2000.0,
         "price_per_slot": {"morning": 900.0, "evening": 1150.0, "night": 1600.0},
@@ -233,7 +237,8 @@ COSTUMES_SEED = [
         "tags": ["mohini", "enchantress", "celestial", "dance-grade"],
         "sizes": ["Free", "S", "M"],
         "images": [
-            "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/stree_mohini.jpg",
+            "/images/costumes/stree_damayanthi_2.jpg"
         ],
         "price_per_day": 2100.0,
         "price_per_slot": {"morning": 950.0, "evening": 1200.0, "night": 1700.0},
@@ -256,7 +261,8 @@ COSTUMES_SEED = [
         "tags": ["seetha", "satvik", "ramayana", "classical"],
         "sizes": ["Free", "M"],
         "images": [
-            "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/stree_seetha.jpg",
+            "/images/costumes/stree_damayanthi_1.jpg"
         ],
         "price_per_day": 1600.0,
         "price_per_slot": {"morning": 750.0, "evening": 950.0, "night": 1300.0},
@@ -281,8 +287,8 @@ COSTUMES_SEED = [
         "tags": ["hanuman", "veeranjaneya", "vanara", "mask", "tail", "stage-grade"],
         "sizes": ["Free", "M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/hanuman_veeranjaneya_1.jpg",
+            "/images/costumes/hanuman_veeranjaneya_2.jpg"
         ],
         "price_per_day": 2600.0,
         "price_per_slot": {"morning": 1200.0, "evening": 1500.0, "night": 2100.0},
@@ -305,7 +311,8 @@ COSTUMES_SEED = [
         "tags": ["sugreeva", "vali", "kishkindha", "vanara-king"],
         "sizes": ["Free", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/hanuman_sugreeva.jpg",
+            "/images/costumes/hanuman_veeranjaneya_1.jpg"
         ],
         "price_per_day": 2300.0,
         "price_per_slot": {"morning": 1050.0, "evening": 1350.0, "night": 1850.0},
@@ -330,7 +337,7 @@ COSTUMES_SEED = [
         "tags": ["narada", "sage", "veena", "tambura", "rudraksha"],
         "sizes": ["Free", "M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rishi_narada.jpg"
         ],
         "price_per_day": 1500.0,
         "price_per_slot": {"morning": 700.0, "evening": 850.0, "night": 1200.0},
@@ -353,7 +360,7 @@ COSTUMES_SEED = [
         "tags": ["parashurama", "warrior-sage", "axe", "battle-axe"],
         "sizes": ["Free", "L", "XL"],
         "images": [
-            "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/rishi_parashurama.jpg"
         ],
         "price_per_day": 1900.0,
         "price_per_slot": {"morning": 850.0, "evening": 1100.0, "night": 1500.0},
@@ -378,7 +385,8 @@ COSTUMES_SEED = [
         "tags": ["kodangi", "vidushaka", "comic", "hasya", "bells", "stage-grade"],
         "sizes": ["Free", "M", "L"],
         "images": [
-            "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/comic_kodangi_1.jpg",
+            "/images/costumes/comic_kodangi_2.jpg"
         ],
         "price_per_day": 1200.0,
         "price_per_slot": {"morning": 550.0, "evening": 700.0, "night": 950.0},
@@ -403,7 +411,7 @@ COSTUMES_SEED = [
         "tags": ["kireeta", "crown", "badagu-thittu", "wood-carved", "gold-leaf"],
         "sizes": ["Free (Adjustable strap)"],
         "images": [
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/crown_badaguthittu.jpg"
         ],
         "price_per_day": 1200.0,
         "price_per_slot": {"morning": 550.0, "evening": 700.0, "night": 950.0},
@@ -426,7 +434,7 @@ COSTUMES_SEED = [
         "tags": ["karna", "sun-crown", "tenku-thittu"],
         "sizes": ["Free"],
         "images": [
-            "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/crown_karna.jpg"
         ],
         "price_per_day": 1000.0,
         "price_per_slot": {"morning": 450.0, "evening": 600.0, "night": 800.0},
@@ -449,7 +457,7 @@ COSTUMES_SEED = [
         "tags": ["mundasu", "pagadi", "tenku-thittu", "turban"],
         "sizes": ["Free"],
         "images": [
-            "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/crown_tenkuthittu.jpg"
         ],
         "price_per_day": 850.0,
         "price_per_slot": {"morning": 400.0, "evening": 500.0, "night": 700.0},
@@ -472,7 +480,7 @@ COSTUMES_SEED = [
         "tags": ["stree", "mundasu", "tiara", "floral"],
         "sizes": ["Free"],
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/crown_stree.jpg"
         ],
         "price_per_day": 750.0,
         "price_per_slot": {"morning": 350.0, "evening": 450.0, "night": 600.0},
@@ -497,7 +505,7 @@ COSTUMES_SEED = [
         "tags": ["bhujakeerthi", "shoulder-guards", "wood-carved", "gold-foil"],
         "sizes": ["Free (Adjustable ties)"],
         "images": [
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/ornament_bhujakeerthi.jpg"
         ],
         "price_per_day": 700.0,
         "price_per_slot": {"morning": 300.0, "evening": 400.0, "night": 550.0},
@@ -520,7 +528,7 @@ COSTUMES_SEED = [
         "tags": ["kante", "chestplate", "collar", "gold"],
         "sizes": ["Free"],
         "images": [
-            "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/ornament_edur_kante.jpg"
         ],
         "price_per_day": 650.0,
         "price_per_slot": {"morning": 300.0, "evening": 400.0, "night": 500.0},
@@ -543,7 +551,7 @@ COSTUMES_SEED = [
         "tags": ["daabu", "waist-belt", "tassels", "gold"],
         "sizes": ["Free (30 to 42 inch waist)"],
         "images": [
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/ornament_daabu.jpg"
         ],
         "price_per_day": 500.0,
         "price_per_slot": {"morning": 250.0, "evening": 300.0, "night": 400.0},
@@ -566,7 +574,7 @@ COSTUMES_SEED = [
         "tags": ["baju-band", "armbands", "simha-mukha"],
         "sizes": ["Free"],
         "images": [
-            "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/ornament_bajuband.jpg"
         ],
         "price_per_day": 400.0,
         "price_per_slot": {"morning": 200.0, "evening": 250.0, "night": 320.0},
@@ -591,7 +599,7 @@ COSTUMES_SEED = [
         "tags": ["kachche", "skirt", "pleated", "cotton", "flared"],
         "sizes": ["Free (Drawstring waist)"],
         "images": [
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/garment_kachche.jpg"
         ],
         "price_per_day": 600.0,
         "price_per_slot": {"morning": 300.0, "evening": 350.0, "night": 500.0},
@@ -614,7 +622,7 @@ COSTUMES_SEED = [
         "tags": ["asura-skirt", "tiered", "flared", "rakshasa"],
         "sizes": ["Free (32 to 44 inch waist)"],
         "images": [
-            "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/garment_asura_skirt.jpg"
         ],
         "price_per_day": 750.0,
         "price_per_slot": {"morning": 350.0, "evening": 450.0, "night": 600.0},
@@ -637,7 +645,7 @@ COSTUMES_SEED = [
         "tags": ["angavastra", "silk", "zari", "shawl"],
         "sizes": ["Free (2.5 meters length)"],
         "images": [
-            "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/garment_angavastra.jpg"
         ],
         "price_per_day": 400.0,
         "price_per_slot": {"morning": 200.0, "evening": 250.0, "night": 320.0},
@@ -662,7 +670,7 @@ COSTUMES_SEED = [
         "tags": ["gada", "mace", "hanuman", "prop", "gold"],
         "sizes": ["36 inches standard"],
         "images": [
-            "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/weapon_gada.jpg"
         ],
         "price_per_day": 500.0,
         "price_per_slot": {"morning": 250.0, "evening": 300.0, "night": 400.0},
@@ -685,7 +693,7 @@ COSTUMES_SEED = [
         "tags": ["dhanus", "bow", "arrow", "arjuna", "rama"],
         "sizes": ["48 inches standard"],
         "images": [
-            "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/weapon_bow_arrow.jpg"
         ],
         "price_per_day": 450.0,
         "price_per_slot": {"morning": 200.0, "evening": 280.0, "night": 380.0},
@@ -708,7 +716,7 @@ COSTUMES_SEED = [
         "tags": ["sword", "shield", "khadga", "parike", "battle"],
         "sizes": ["Standard"],
         "images": [
-            "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/weapon_sword_shield.jpg"
         ],
         "price_per_day": 550.0,
         "price_per_slot": {"morning": 250.0, "evening": 350.0, "night": 450.0},
@@ -731,7 +739,7 @@ COSTUMES_SEED = [
         "tags": ["trishula", "trident", "durga", "devi", "prop"],
         "sizes": ["54 inches"],
         "images": [
-            "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/weapon_trishula.jpg"
         ],
         "price_per_day": 600.0,
         "price_per_slot": {"morning": 280.0, "evening": 380.0, "night": 500.0},
@@ -756,7 +764,7 @@ COSTUMES_SEED = [
         "tags": ["gaggara", "ankle-bells", "brass", "percussion"],
         "sizes": ["Pair standard"],
         "images": [
-            "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/acc_gaggara.jpg"
         ],
         "price_per_day": 400.0,
         "price_per_slot": {"morning": 200.0, "evening": 250.0, "night": 350.0},
@@ -779,7 +787,7 @@ COSTUMES_SEED = [
         "tags": ["chutti", "makeup", "face-paint", "contour"],
         "sizes": ["Universal fit"],
         "images": [
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/acc_chutti.jpg"
         ],
         "price_per_day": 350.0,
         "price_per_slot": {"morning": 150.0, "evening": 200.0, "night": 300.0},
@@ -802,7 +810,7 @@ COSTUMES_SEED = [
         "tags": ["meeshe", "moustache", "beard", "yak-hair"],
         "sizes": ["Universal"],
         "images": [
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80"
+            "/images/costumes/acc_meeshe.jpg"
         ],
         "price_per_day": 300.0,
         "price_per_slot": {"morning": 150.0, "evening": 200.0, "night": 250.0},
@@ -831,7 +839,18 @@ async def seed_database(db):
             await db.costumes.insert_one(doc)
         logger.info("Costumes seeded successfully.")
     else:
-        logger.info(f"Database already has {costumes_count} costumes.")
+        logger.info(f"Database already has {costumes_count} costumes. Refreshing costume details and images...")
+        for costume_data in COSTUMES_SEED:
+            await db.costumes.update_one(
+                {"sku": costume_data["sku"]},
+                {"$set": {
+                    "images": costume_data["images"],
+                    "description": costume_data["description"],
+                    "name": costume_data["name"],
+                    "kannada_name": costume_data.get("kannada_name", "")
+                }}
+            )
+        logger.info("Costumes updated with authentic imagery.")
 
     # Seed Admin & Demo Users
     admin_user = await db.users.find_one({"email": "admin@demo.com"})

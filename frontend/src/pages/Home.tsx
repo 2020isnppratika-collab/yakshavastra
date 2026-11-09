@@ -287,8 +287,8 @@ export const Home: React.FC = () => {
 
           <div className="w-full md:w-80 aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-stone-900">
             <img
-              src="https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&w=800&q=80"
-              alt="Yakshagana Heritage"
+              src="/images/costumes/hero_banner.jpg"
+              alt="Yakshagana Heritage Performance"
               className="w-full h-full object-cover"
             />
           </div>

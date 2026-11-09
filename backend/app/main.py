@@ -4,6 +4,8 @@ from datetime import datetime, timezone
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
+import os
 
 from app.core.config import settings
 from app.db.mongo import connect_to_db, close_db_connection, get_database
@@ -45,6 +47,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static images from frontend public directory
+static_images_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "public", "images"))
+if os.path.isdir(static_images_dir):
+    app.mount("/images", StaticFiles(directory=static_images_dir), name="images")
 
 # API Routers
 app.include_router(auth.router, prefix=settings.API_V1_STR)

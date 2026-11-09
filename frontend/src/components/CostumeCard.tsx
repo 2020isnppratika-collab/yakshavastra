@@ -24,7 +24,7 @@ export const CostumeCard: React.FC<CostumeCardProps> = ({ costume }) => {
   const { lang } = useLanguage();
   const image = costume.images && costume.images.length > 0
     ? costume.images[0]
-    : "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80";
+    : "/images/costumes/raja_arjuna_1.jpg";
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-stone-200 flex flex-col h-full transform hover:-translate-y-1">

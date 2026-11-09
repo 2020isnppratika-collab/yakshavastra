@@ -62,7 +62,7 @@ export const Cart: React.FC = () => {
               <div className="flex space-x-4 items-start w-full sm:w-auto">
                 <div className="w-24 h-24 rounded-xl overflow-hidden bg-stone-900 shrink-0 border border-stone-200">
                   <img
-                    src={item.costume.images?.[0] || "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1"}
+                    src={item.costume.images?.[0] || "/images/costumes/raja_arjuna_1.jpg"}
                     alt={item.costume.name}
                     className="w-full h-full object-cover"
                   />
