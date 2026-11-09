@@ -17,4 +17,14 @@ body {
   background-color: #FAF6F0;
   color: #1F2937;
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar for clean mobile tabs & horizontal carousels */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

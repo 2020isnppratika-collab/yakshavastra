@@ -163,18 +163,18 @@ export const Home: React.FC = () => {
 
       {/* Featured Costumes Showcase */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 block">
               Handcrafted Stage Sets
             </span>
-            <h2 className="font-serif text-3xl font-bold text-stone-900 mt-1">
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
               Featured Yakshagana Costumes
             </h2>
           </div>
           <Link
             to="/costumes"
-            className="text-sm font-semibold text-red-900 hover:text-red-700 flex items-center space-x-1"
+            className="text-sm font-semibold text-red-900 hover:text-red-700 flex items-center space-x-1 shrink-0"
           >
             <span>View All ({categories[0]?.count || 36}+ items)</span>
             <ChevronRight className="w-4 h-4" />
@@ -211,7 +211,7 @@ export const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             <div className="bg-stone-800/60 p-6 rounded-2xl border border-stone-700/60 relative">
               <div className="w-10 h-10 rounded-full bg-red-900 text-amber-300 font-bold flex items-center justify-center mb-4 text-base border border-amber-400/30">
                 1

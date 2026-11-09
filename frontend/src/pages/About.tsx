@@ -25,8 +25,8 @@ export const About: React.FC = () => {
       </div>
 
       {/* Two Major Traditions */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="bg-white p-5 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600">
             Northern Coastal Tradition
           </span>
@@ -41,7 +41,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+        <div className="bg-white p-5 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600">
             Southern Coastal Tradition
           </span>
@@ -58,7 +58,7 @@ export const About: React.FC = () => {
       </div>
 
       {/* Craftsmanship Section */}
-      <div className="bg-stone-900 text-white rounded-3xl p-8 sm:p-12 border border-amber-800/40 space-y-8">
+      <div className="bg-stone-900 text-white rounded-3xl p-5 sm:p-12 border border-amber-800/40 space-y-8">
         <div className="max-w-2xl space-y-2">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
             Artisanal Excellence

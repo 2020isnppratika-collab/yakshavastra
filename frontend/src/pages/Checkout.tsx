@@ -182,9 +182,9 @@ export const Checkout: React.FC = () => {
 
       {/* Guest/Demo Login Prompt if not logged in */}
       {!user && (
-        <div className="bg-amber-50 border border-amber-300 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="bg-amber-50 border border-amber-300 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center space-x-3">
-            <UserIcon className="w-8 h-8 text-amber-700 shrink-0" />
+            <UserIcon className="w-7 h-7 sm:w-8 sm:h-8 text-amber-700 shrink-0" />
             <div>
               <h4 className="font-bold text-sm text-stone-900">Sign in to complete your costume booking</h4>
               <p className="text-xs text-stone-600 mt-0.5">
@@ -193,16 +193,16 @@ export const Checkout: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center space-x-3 shrink-0">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full sm:w-auto shrink-0">
             <button
               onClick={() => loginAsDemo("customer")}
-              className="px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs shadow-sm transition-colors"
+              className="px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs shadow-sm transition-colors text-center"
             >
               ⚡ 1-Click Demo Customer Login
             </button>
             <Link
               to="/login"
-              className="px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-stone-700 font-semibold text-xs hover:bg-stone-50"
+              className="px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-stone-700 font-semibold text-xs hover:bg-stone-50 text-center"
             >
               Sign In
             </Link>
