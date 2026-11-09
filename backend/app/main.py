@@ -74,7 +74,7 @@ async def health_check():
 @app.get("/", include_in_schema=False)
 async def root():
     return {
-        "message": "Welcome to Yakshagana Costume Rental API",
+        "message": "Welcome to YakshaKesari Costume Rental API",
         "docs": "/docs",
         "health": "/health",
         "api_version": settings.API_V1_STR

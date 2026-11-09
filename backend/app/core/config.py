@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 from pydantic import field_validator
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Yakshagana Costume Rental Platform"
+    PROJECT_NAME: str = "YakshaKesari Costume Rental Platform"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     

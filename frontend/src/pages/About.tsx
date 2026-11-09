@@ -95,6 +95,39 @@ export const About: React.FC = () => {
         </div>
       </div>
 
+      {/* Store Location Banner */}
+      <div className="bg-amber-50 rounded-3xl p-8 border border-amber-200 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="space-y-2 text-center md:text-left">
+          <span className="text-xs font-bold uppercase tracking-widest text-amber-800">
+            Visit Our Store & Workshop
+          </span>
+          <h3 className="font-serif text-2xl font-bold text-stone-900">
+            Yakshakesari Yakshagana Costumes
+          </h3>
+          <p className="text-xs text-stone-600 max-w-xl">
+            5th Main Rd, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037 &bull; Helpline: +91 80733 77289
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="https://maps.app.goo.gl/xCEzwpuNuxr6HnR18?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-red-900 hover:bg-red-800 text-amber-100 font-bold text-xs uppercase tracking-wider transition-colors shadow-md flex items-center space-x-1.5"
+          >
+            <MapPin className="w-4 h-4" />
+            <span>Open Google Maps</span>
+          </a>
+          <Link
+            to="/contact"
+            className="px-5 py-3 rounded-xl bg-white border border-stone-300 hover:bg-stone-50 text-stone-800 font-bold text-xs uppercase tracking-wider transition-colors"
+          >
+            Contact Details
+          </Link>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="text-center pt-4">
         <Link

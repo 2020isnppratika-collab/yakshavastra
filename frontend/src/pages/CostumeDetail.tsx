@@ -307,7 +307,7 @@ export const CostumeDetail: React.FC = () => {
           )}
 
           {/* Live Price Calculator Summary Card */}
-          <div className="bg-stone-50 p-6 rounded-2xl border border-stone-200 space-y-3">
+          <div className="bg-stone-50 p-4 sm:p-6 rounded-2xl border border-stone-200 space-y-3">
             <h4 className="font-bold text-xs uppercase tracking-wider text-stone-600">
               Live Price & Deposit Breakdown
             </h4>
@@ -354,7 +354,7 @@ export const CostumeDetail: React.FC = () => {
                 type="button"
                 onClick={handleAddToCart}
                 disabled={Boolean(availabilityWarning)}
-                className="py-3 px-4 rounded-xl bg-white border border-red-900 text-red-900 font-bold text-xs uppercase tracking-wider hover:bg-red-50 transition-colors flex items-center justify-center space-x-2 disabled:opacity-50"
+                className="py-3.5 px-4 rounded-xl bg-white border border-red-900 text-red-900 font-bold text-xs uppercase tracking-wider hover:bg-red-50 transition-colors flex items-center justify-center space-x-2 disabled:opacity-50 shadow-sm"
               >
                 <ShoppingBag className="w-4 h-4" />
                 <span>{t("add_to_cart")}</span>
@@ -364,7 +364,7 @@ export const CostumeDetail: React.FC = () => {
                 type="button"
                 onClick={handleBookNow}
                 disabled={Boolean(availabilityWarning)}
-                className="py-3 px-4 rounded-xl bg-gradient-to-r from-red-900 to-red-800 text-amber-100 font-bold text-xs uppercase tracking-wider hover:from-red-800 hover:to-red-700 transition-all shadow-md flex items-center justify-center space-x-2 disabled:opacity-50"
+                className="py-3.5 px-4 rounded-xl bg-gradient-to-r from-red-900 to-red-800 text-amber-100 font-bold text-xs uppercase tracking-wider hover:from-red-800 hover:to-red-700 transition-all shadow-md flex items-center justify-center space-x-2 disabled:opacity-50"
               >
                 <span>{t("book_now")}</span>
                 <ArrowRight className="w-4 h-4" />

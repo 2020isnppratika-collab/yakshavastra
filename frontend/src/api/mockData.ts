@@ -1411,15 +1411,15 @@ export const MOCK_USER: User = {
 
 export const MOCK_ADMIN: User = {
   id: "user_admin_001",
-  name: "Yakshagana Admin",
+  name: "YakshaKesari Admin",
   email: "admin@demo.com",
-  phone: "+91 98800 12345",
+  phone: "+91 80733 77289",
   role: "admin",
   address: {
-    line1: "Car Street, Near Sri Krishna Temple",
-    city: "Udupi",
+    line1: "5th Main Rd, Marathahalli Village",
+    city: "Bengaluru",
     state: "Karnataka",
-    pincode: "576101"
+    pincode: "560037"
   }
 };
 

@@ -15,25 +15,25 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-[#7F1D1D] text-amber-50 shadow-lg border-b border-amber-600/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo & Brand */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 flex items-center justify-center shadow-md transform group-hover:rotate-6 transition-transform">
-              <Crown className="w-7 h-7 text-red-950" />
+          <Link to="/" className="flex items-center space-x-2.5 sm:space-x-3 group min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 flex items-center justify-center shadow-md transform group-hover:rotate-6 transition-transform shrink-0">
+              <Crown className="w-5 h-5 sm:w-7 sm:h-7 text-red-950" />
             </div>
-            <div>
-              <span className="font-serif text-2xl font-bold tracking-wide text-amber-200 block leading-tight">
+            <div className="min-w-0">
+              <span className="font-serif text-lg sm:text-2xl font-bold tracking-wide text-amber-200 block leading-tight truncate">
                 {t("brand_name")}
               </span>
-              <span className="text-xs text-amber-300/80 font-sans tracking-wider uppercase block">
+              <span className="text-[10px] sm:text-xs text-amber-300/80 font-sans tracking-wider uppercase block truncate hidden xs:block">
                 {lang === "kn" ? "ಯಕ್ಷಗಾನ ವೇಷಭೂಷಣ ಬಾಡಿಗೆ" : "Yakshagana Costume Rentals"}
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium shrink-0">
             <Link to="/" className="hover:text-amber-300 transition-colors">
               {t("nav_home")}
             </Link>
@@ -42,6 +42,9 @@ export const Navbar: React.FC = () => {
             </Link>
             <Link to="/about" className="hover:text-amber-300 transition-colors">
               {t("nav_about")}
+            </Link>
+            <Link to="/contact" className="hover:text-amber-300 transition-colors">
+              {t("nav_contact")}
             </Link>
             {user && (
               <Link to="/account/bookings" className="hover:text-amber-300 transition-colors flex items-center space-x-1">
@@ -61,21 +64,22 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right Action Icons */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-3 shrink-0">
             {/* Language Switch */}
             <button
               onClick={toggleLang}
-              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-red-900/60 border border-amber-600/40 text-xs font-medium text-amber-200 hover:bg-red-800 transition-colors"
+              className="flex items-center space-x-1 px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg bg-red-900/60 border border-amber-600/40 text-xs font-medium text-amber-200 hover:bg-red-800 transition-colors"
               title="Toggle English / ಕನ್ನಡ"
             >
-              <Globe className="w-3.5 h-3.5 text-amber-400" />
-              <span>{lang === "en" ? "ಕನ್ನಡ" : "English"}</span>
+              <Globe className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span className="hidden sm:inline">{lang === "en" ? "ಕನ್ನಡ" : "English"}</span>
+              <span className="sm:hidden">{lang === "en" ? "ಕ" : "En"}</span>
             </button>
 
             {/* Cart Button */}
             <Link
               to="/cart"
-              className="relative p-2.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-200 border border-amber-500/30 transition-colors"
+              className="relative p-2 sm:p-2.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-200 border border-amber-500/30 transition-colors"
               title="View Cart"
             >
               <ShoppingBag className="w-5 h-5" />
@@ -91,9 +95,9 @@ export const Navbar: React.FC = () => {
               <div className="relative">
                 <button
                   onClick={() => setUserDropdownOpen(!userDropdownOpen)}
-                  className="flex items-center space-x-2 p-1.5 rounded-full hover:bg-red-900/60 border border-amber-500/30"
+                  className="flex items-center space-x-2 p-1 rounded-full hover:bg-red-900/60 border border-amber-500/30"
                 >
-                  <div className="w-8 h-8 rounded-full bg-amber-600 text-red-950 font-bold flex items-center justify-center text-sm">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-600 text-red-950 font-bold flex items-center justify-center text-xs sm:text-sm">
                     {user.name.charAt(0).toUpperCase()}
                   </div>
                 </button>
@@ -185,6 +189,13 @@ export const Navbar: React.FC = () => {
           >
             {t("nav_about")}
           </Link>
+          <Link
+            to="/contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-base font-medium text-amber-100 hover:text-amber-300"
+          >
+            {t("nav_contact")}
+          </Link>
           {user && (
             <Link
               to="/account/bookings"
@@ -203,7 +214,24 @@ export const Navbar: React.FC = () => {
               {t("nav_admin")}
             </Link>
           )}
-          {!user && (
+          {user ? (
+            <div className="pt-2 border-t border-amber-800/60">
+              <div className="flex items-center justify-between py-2 text-xs text-amber-200/80">
+                <span className="truncate">{user.name} ({user.role})</span>
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    logout();
+                    navigate("/");
+                  }}
+                  className="text-red-300 hover:text-white font-bold flex items-center space-x-1"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                  <span>{t("nav_logout")}</span>
+                </button>
+              </div>
+            </div>
+          ) : (
             <Link
               to="/login"
               onClick={() => setMobileMenuOpen(false)}

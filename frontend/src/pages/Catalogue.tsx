@@ -119,13 +119,13 @@ export const Catalogue: React.FC = () => {
       </div>
 
       {/* Main Search & Date Filter Bar */}
-      <div className="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm space-y-4">
-        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-3">
+      <div className="bg-white p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col lg:flex-row gap-3">
           <div className="relative flex-1">
             <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5" />
             <input
               type="text"
-              placeholder="Search by costume name, character, tags, or Kannada..."
+              placeholder="Search costume name, character, tags, or Kannada..."
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-stone-50 text-stone-900 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-red-900"
@@ -133,48 +133,50 @@ export const Catalogue: React.FC = () => {
           </div>
 
           {/* Date availability filter */}
-          <div className="flex items-center space-x-2">
-            <div className="relative">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
+            <div className="relative flex-1 sm:flex-initial">
               <Calendar className="w-4 h-4 text-stone-400 absolute left-3 top-3" />
               <input
                 type="date"
                 value={availableFrom}
                 onChange={(e) => updateParam("available_from", e.target.value)}
-                className="pl-9 pr-3 py-2.5 bg-stone-50 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-red-900"
+                className="w-full sm:w-auto pl-9 pr-3 py-2 bg-stone-50 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-red-900"
                 title="From date"
               />
             </div>
             <span className="text-xs text-stone-400">to</span>
-            <div className="relative">
+            <div className="relative flex-1 sm:flex-initial">
               <Calendar className="w-4 h-4 text-stone-400 absolute left-3 top-3" />
               <input
                 type="date"
                 value={availableTo}
                 onChange={(e) => updateParam("available_to", e.target.value)}
-                className="pl-9 pr-3 py-2.5 bg-stone-50 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-red-900"
+                className="w-full sm:w-auto pl-9 pr-3 py-2 bg-stone-50 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-red-900"
                 title="To date"
               />
             </div>
           </div>
 
-          <button
-            type="submit"
-            className="px-5 py-2.5 bg-red-900 hover:bg-red-800 text-amber-100 font-semibold text-xs tracking-wider uppercase rounded-xl transition-colors shadow-sm shrink-0"
-          >
-            Search
-          </button>
-
-          {hasActiveFilters && (
+          <div className="flex items-center gap-2">
             <button
-              type="button"
-              onClick={resetAllFilters}
-              className="px-3 py-2.5 text-stone-600 hover:text-red-900 text-xs font-semibold rounded-xl flex items-center space-x-1 border border-stone-200 hover:bg-stone-50"
-              title="Reset all filters"
+              type="submit"
+              className="flex-1 sm:flex-initial px-5 py-2.5 bg-red-900 hover:bg-red-800 text-amber-100 font-semibold text-xs tracking-wider uppercase rounded-xl transition-colors shadow-sm text-center shrink-0"
             >
-              <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset</span>
+              Search
             </button>
-          )}
+
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={resetAllFilters}
+                className="px-3 py-2.5 text-stone-600 hover:text-red-900 text-xs font-semibold rounded-xl flex items-center justify-center space-x-1 border border-stone-200 hover:bg-stone-50 shrink-0"
+                title="Reset all filters"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reset</span>
+              </button>
+            )}
+          </div>
         </form>
 
         {/* Category Filter Chips */}

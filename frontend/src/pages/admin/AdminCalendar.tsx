@@ -58,15 +58,15 @@ export const AdminCalendar: React.FC = () => {
       </div>
 
       {/* Sub-Tabs */}
-      <div className="flex space-x-3 border-b border-stone-200 text-xs font-bold pb-2">
-        <Link to="/admin" className="text-stone-500 hover:text-stone-900 pb-2">Dashboard</Link>
-        <Link to="/admin/bookings" className="text-stone-500 hover:text-stone-900 pb-2">Bookings Manager</Link>
-        <Link to="/admin/costumes" className="text-stone-500 hover:text-stone-900 pb-2">Costume Inventory</Link>
-        <Link to="/admin/calendar" className="text-red-900 border-b-2 border-red-900 pb-2">Rental Schedule Calendar</Link>
+      <div className="flex space-x-3 sm:space-x-4 border-b border-stone-200 text-xs font-bold pb-2 overflow-x-auto whitespace-nowrap scrollbar-none">
+        <Link to="/admin" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Dashboard</Link>
+        <Link to="/admin/bookings" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Bookings Manager</Link>
+        <Link to="/admin/costumes" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Costume Inventory</Link>
+        <Link to="/admin/calendar" className="text-red-900 border-b-2 border-red-900 pb-2 shrink-0">Rental Schedule Calendar</Link>
       </div>
 
       {/* Calendar Grid */}
-      <div className="bg-white rounded-3xl border border-stone-200 shadow-sm p-6 space-y-4">
+      <div className="bg-white rounded-3xl border border-stone-200 shadow-sm p-3.5 sm:p-6 space-y-4">
         <div className="grid grid-cols-7 gap-2 text-center text-xs font-bold text-stone-500 uppercase tracking-wider">
           <span>Sun</span>
           <span>Mon</span>

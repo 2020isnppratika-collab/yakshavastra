@@ -183,11 +183,11 @@ export const AdminCostumes: React.FC = () => {
       </div>
 
       {/* Sub-Tabs */}
-      <div className="flex space-x-3 border-b border-stone-200 text-xs font-bold pb-2">
-        <Link to="/admin" className="text-stone-500 hover:text-stone-900 pb-2">Dashboard</Link>
-        <Link to="/admin/bookings" className="text-stone-500 hover:text-stone-900 pb-2">Bookings Manager</Link>
-        <Link to="/admin/costumes" className="text-red-900 border-b-2 border-red-900 pb-2">Costume Inventory ({costumes.length})</Link>
-        <Link to="/admin/calendar" className="text-stone-500 hover:text-stone-900 pb-2">Rental Schedule Calendar</Link>
+      <div className="flex space-x-3 sm:space-x-4 border-b border-stone-200 text-xs font-bold pb-2 overflow-x-auto whitespace-nowrap scrollbar-none">
+        <Link to="/admin" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Dashboard</Link>
+        <Link to="/admin/bookings" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Bookings Manager</Link>
+        <Link to="/admin/costumes" className="text-red-900 border-b-2 border-red-900 pb-2 shrink-0">Costume Inventory ({costumes.length})</Link>
+        <Link to="/admin/calendar" className="text-stone-500 hover:text-stone-900 pb-2 shrink-0">Rental Schedule Calendar</Link>
       </div>
 
       {/* Filter Bar */}

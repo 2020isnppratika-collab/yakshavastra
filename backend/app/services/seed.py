@@ -856,16 +856,16 @@ async def seed_database(db):
     admin_user = await db.users.find_one({"email": "admin@demo.com"})
     if not admin_user:
         admin_doc = {
-            "name": "Yakshagana Admin",
+            "name": "YakshaKesari Admin",
             "email": "admin@demo.com",
-            "phone": "+91 98800 12345",
+            "phone": "+91 80733 77289",
             "password_hash": hash_password("Admin@123"),
             "role": "admin",
             "address": {
-                "line1": "Car Street, Near Sri Krishna Temple",
-                "city": "Udupi",
+                "line1": "Yakshakesari Yakshagana Costumes, 5th Main Rd, Marathahalli Village",
+                "city": "Bengaluru",
                 "state": "Karnataka",
-                "pincode": "576101"
+                "pincode": "560037"
             },
             "created_at": datetime.now(timezone.utc)
         }

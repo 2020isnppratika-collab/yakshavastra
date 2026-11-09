@@ -11,12 +11,13 @@ interface LanguageContextType {
 
 const translations: Record<Language, Record<string, string>> = {
   en: {
-    brand_name: "YakshaVastra",
+    brand_name: "YakshaKesari",
     brand_tagline: "Authentic Yakshagana Costume Rentals",
     nav_home: "Home",
     nav_catalogue: "Costumes",
     nav_how_it_works: "How It Works",
     nav_about: "About Yakshagana",
+    nav_contact: "Contact Us",
     nav_my_bookings: "My Bookings",
     nav_admin: "Admin Portal",
     nav_login: "Login",
@@ -44,12 +45,13 @@ const translations: Record<Language, Record<string, string>> = {
     deposit_note: "Security deposit is 100% refunded within 24 hours of return inspection.",
   },
   kn: {
-    brand_name: "ಯಕ್ಷವಸ್ತ್ರ",
+    brand_name: "ಯಕ್ಷಕೇಸರಿ",
     brand_tagline: "ಪ್ರಾಮಾಣಿಕ ಯಕ್ಷಗಾನ ವೇಷಭೂಷಣ ಬಾಡಿಗೆ",
     nav_home: "ಮುಖಪುಟ",
     nav_catalogue: "ವೇಷಗಳು",
     nav_how_it_works: "ಬಳಸುವುದು ಹೇಗೆ",
     nav_about: "ಯಕ್ಷಗಾನ ಪರಿಚಯ",
+    nav_contact: "ಸಂಪರ್ಕಿಸಿ",
     nav_my_bookings: "ನನ್ನ ಬುಕಿಂಗ್‌ಗಳು",
     nav_admin: "ಆಡಳಿತ ಮಂಡಳಿ",
     nav_login: "ಲಾಗಿನ್",
